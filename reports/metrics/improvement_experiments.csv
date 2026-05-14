@@ -1,0 +1,9 @@
+﻿predicted_objects,matches,false_positives,false_negatives,operating_precision,operating_recall,experiment_id,weights,split,imgsz,conf,iou_threshold,device,fn_fp_score
+494,168,326,164,0.340080971659919,0.5060240963855421,op_img320_conf0p05,C:\Users\User\Desktop\practice\pcb_aoi_project\runs\detect\models\yolo_runs\pcb_aoi_baseline\weights\best.pt,test,320,0.05,0.5,cpu,245.5
+232,106,126,226,0.45689655172413796,0.3192771084337349,op_img320_conf0p10,C:\Users\User\Desktop\practice\pcb_aoi_project\runs\detect\models\yolo_runs\pcb_aoi_baseline\weights\best.pt,test,320,0.1,0.5,cpu,257.5
+55,36,19,296,0.6545454545454545,0.10843373493975904,op_img320_conf0p25,C:\Users\User\Desktop\practice\pcb_aoi_project\runs\detect\models\yolo_runs\pcb_aoi_baseline\weights\best.pt,test,320,0.25,0.5,cpu,300.75
+14,13,1,319,0.9285714285714286,0.0391566265060241,op_img320_conf0p40,C:\Users\User\Desktop\practice\pcb_aoi_project\runs\detect\models\yolo_runs\pcb_aoi_baseline\weights\best.pt,test,320,0.4,0.5,cpu,319.25
+0,0,0,332,0.0,0.0,op_img640_conf0p40,C:\Users\User\Desktop\practice\pcb_aoi_project\runs\detect\models\yolo_runs\pcb_aoi_baseline\weights\best.pt,test,640,0.4,0.5,cpu,332.0
+2,0,2,332,0.0,0.0,op_img640_conf0p25,C:\Users\User\Desktop\practice\pcb_aoi_project\runs\detect\models\yolo_runs\pcb_aoi_baseline\weights\best.pt,test,640,0.25,0.5,cpu,332.5
+26,1,25,331,0.038461538461538464,0.0030120481927710845,op_img640_conf0p10,C:\Users\User\Desktop\practice\pcb_aoi_project\runs\detect\models\yolo_runs\pcb_aoi_baseline\weights\best.pt,test,640,0.1,0.5,cpu,337.25
+111,12,99,320,0.10810810810810811,0.03614457831325301,op_img640_conf0p05,C:\Users\User\Desktop\practice\pcb_aoi_project\runs\detect\models\yolo_runs\pcb_aoi_baseline\weights\best.pt,test,640,0.05,0.5,cpu,344.75

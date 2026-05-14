@@ -1,0 +1,11 @@
+{
+  "metric": "fn_fp_score",
+  "friedman_stat": 1.530612244897959,
+  "p_value": 0.6752232749042055,
+  "candidates": [
+    "img320_conf0p05",
+    "img320_conf0p10",
+    "img320_conf0p25",
+    "img320_conf0p40"
+  ]
+}

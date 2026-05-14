@@ -1,0 +1,38 @@
+{
+  "total_images": 1444,
+  "total_objects": 5764,
+  "splits": {
+    "test_data": {
+      "images": 60,
+      "objects": 332
+    },
+    "train_data": {
+      "images": 173,
+      "objects": 679
+    },
+    "train_data_augmentation": {
+      "images": 1211,
+      "objects": 4753
+    }
+  },
+  "classes": {
+    "Bad_podu": 4575,
+    "Bad_qiaojiao": 1189
+  },
+  "image_size": {
+    "width_values": [
+      600,
+      900
+    ],
+    "height_values": [
+      600,
+      900
+    ]
+  },
+  "box_area_ratio": {
+    "min": 0.00018333333333333334,
+    "median": 0.0008012345679012346,
+    "mean": 0.0008127719090823415,
+    "max": 0.0027333333333333333
+  }
+}

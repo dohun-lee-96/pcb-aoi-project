@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local environments
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Kaggle/raw data and generated YOLO image labels
+data/raw/
+data/cv/
+data/yolo/images/
+data/yolo/labels/
+data/yolo/*.cache
+
+# Model weights and training runs
+*.pt
+models/
+runs/
+
+# Streamlit/local tooling
+.streamlit/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db

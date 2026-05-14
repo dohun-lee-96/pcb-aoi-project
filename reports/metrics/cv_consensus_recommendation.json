@@ -1,0 +1,40 @@
+{
+  "strict_weighted_best": {
+    "candidate_id": "img320_conf0p25",
+    "imgsz": 320,
+    "conf": 0.25,
+    "map50_mean": 0.1083622857692177,
+    "map50_95_mean": 0.0268420837698553,
+    "operating_precision_mean": 0.3534991324465008,
+    "operating_recall_mean": 0.1368213278509562,
+    "false_positives_mean": 32.0,
+    "false_negatives_mean": 117.2,
+    "fn_fp_score_mean": 125.2
+  },
+  "recommended_consensus": {
+    "candidate_id": "img320_conf0p10",
+    "imgsz": 320,
+    "conf": 0.1,
+    "map50_mean": 0.1083622857692177,
+    "map50_95_mean": 0.0268420837698553,
+    "operating_precision_mean": 0.2664660045957429,
+    "operating_recall_mean": 0.207487138277775,
+    "false_positives_mean": 80.8,
+    "false_negatives_mean": 107.2,
+    "fn_fp_score_mean": 127.4
+  },
+  "baseline_reference": {
+    "candidate_id": "img320_conf0p25",
+    "imgsz": 320,
+    "conf": 0.25,
+    "map50_mean": 0.1083622857692177,
+    "map50_95_mean": 0.0268420837698553,
+    "operating_precision_mean": 0.3534991324465008,
+    "operating_recall_mean": 0.1368213278509562,
+    "false_positives_mean": 32.0,
+    "false_negatives_mean": 117.2,
+    "fn_fp_score_mean": 125.2
+  },
+  "recommendation_reason": "conf=0.10 lowers average false negatives versus conf=0.25 while avoiding the very large false-positive load seen at conf=0.05. Wilcoxon/Friedman tests did not show statistically significant differences with this 1-epoch CPU run, so this is an operating-risk recommendation rather than a proven model-quality improvement.",
+  "next_full_scale": "Run the same 5-fold framework with CUDA, 50+ epochs, imgsz=640, and compare yolov8n/yolov8s with rare-class oversampling."
+}

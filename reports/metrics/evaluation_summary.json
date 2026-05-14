@@ -1,0 +1,13 @@
+{
+  "split": "test",
+  "weights": "C:\\Users\\User\\Desktop\\practice\\pcb_aoi_project\\runs\\detect\\models\\yolo_runs\\pcb_aoi_baseline\\weights\\best.pt",
+  "device": "cpu",
+  "map50": 0.052219355719355716,
+  "map50_95": 0.010578227729284984,
+  "precision_mean": 0.3392857142857143,
+  "recall_mean": 0.06440677966101695,
+  "class_names": {
+    "0": "Bad_podu",
+    "1": "Bad_qiaojiao"
+  }
+}

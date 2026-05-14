@@ -1,0 +1,16 @@
+{
+  "predicted_objects": 494,
+  "matches": 168,
+  "false_positives": 326,
+  "false_negatives": 164,
+  "operating_precision": 0.340080971659919,
+  "operating_recall": 0.5060240963855421,
+  "experiment_id": "op_img320_conf0p05",
+  "weights": "C:\\Users\\User\\Desktop\\practice\\pcb_aoi_project\\runs\\detect\\models\\yolo_runs\\pcb_aoi_baseline\\weights\\best.pt",
+  "split": "test",
+  "imgsz": 320,
+  "conf": 0.05,
+  "iou_threshold": 0.5,
+  "device": "cpu",
+  "fn_fp_score": 245.5
+}

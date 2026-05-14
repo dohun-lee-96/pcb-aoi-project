@@ -1,0 +1,4 @@
+﻿candidate_id,metric,wilcoxon_stat,p_value,holm_p_value,significant_0_05
+img320_conf0p05,fn_fp_score,5.0,0.625,1.0,False
+img320_conf0p10,fn_fp_score,7.0,1.0,1.0,False
+img320_conf0p40,fn_fp_score,0.5,0.125,0.375,False

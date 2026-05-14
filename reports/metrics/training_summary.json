@@ -1,0 +1,10 @@
+{
+  "run_dir": "C:\\Users\\User\\Desktop\\practice\\pcb_aoi_project\\runs\\detect\\models\\yolo_runs\\pcb_aoi_baseline",
+  "weights": "C:\\Users\\User\\Desktop\\practice\\pcb_aoi_project\\runs\\detect\\models\\yolo_runs\\pcb_aoi_baseline\\weights\\best.pt",
+  "device": "cpu",
+  "torch_version": "2.12.0+cpu",
+  "cuda_available": false,
+  "epochs": 1,
+  "imgsz": 320,
+  "batch": 2
+}

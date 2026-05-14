@@ -1,0 +1,7 @@
+path: C:\Users\User\Desktop\practice\pcb_aoi_project\data\yolo
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: Bad_podu
+  1: Bad_qiaojiao

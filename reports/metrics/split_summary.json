@@ -1,0 +1,13 @@
+{
+  "class_mapping": {
+    "Bad_podu": 0,
+    "Bad_qiaojiao": 1
+  },
+  "train_base_groups": 138,
+  "val_base_groups": 35,
+  "samples": {
+    "train": 966,
+    "test": 60,
+    "val": 35
+  }
+}

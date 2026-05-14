@@ -1,0 +1,9 @@
+{
+  "ground_truth_objects": 332,
+  "predicted_objects": 55,
+  "matches": 36,
+  "false_positives": 19,
+  "false_negatives": 296,
+  "localization_errors": 6,
+  "iou_threshold": 0.5
+}

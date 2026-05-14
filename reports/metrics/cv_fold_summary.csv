@@ -1,0 +1,6 @@
+﻿fold,train_groups,val_groups,val_strata
+0,138,35,"{'podu': 17, 'both': 14, 'qiaojiao': 4}"
+1,138,35,"{'podu': 17, 'both': 14, 'qiaojiao': 4}"
+2,138,35,"{'podu': 17, 'both': 14, 'qiaojiao': 4}"
+3,139,34,"{'podu': 17, 'both': 13, 'qiaojiao': 4}"
+4,139,34,"{'podu': 17, 'both': 14, 'qiaojiao': 3}"
