@@ -3,11 +3,11 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-import cv2
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
+from PIL import Image, ImageDraw
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -36,8 +36,8 @@ def read_label_boxes(image_id: str, split: str = "test") -> pd.DataFrame:
     image_path = next((YOLO_DIR / "images" / split).glob(f"{image_id}.*"), None)
     if not label_path.exists() or image_path is None:
         return pd.DataFrame()
-    image = cv2.imread(str(image_path))
-    height, width = image.shape[:2]
+    with Image.open(image_path) as image:
+        width, height = image.size
     rows = []
     for line in label_path.read_text(encoding="utf-8").splitlines():
         cls, x, y, w, h = map(float, line.split())
@@ -60,21 +60,21 @@ def read_label_boxes(image_id: str, split: str = "test") -> pd.DataFrame:
 
 
 def draw_boxes(image_path: Path, gt: pd.DataFrame, pred: pd.DataFrame) -> object:
-    image = cv2.imread(str(image_path))
-    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+    image = Image.open(image_path).convert("RGB")
+    draw = ImageDraw.Draw(image)
 
     for _, row in gt.iterrows():
         p1 = (int(row["xmin"]), int(row["ymin"]))
         p2 = (int(row["xmax"]), int(row["ymax"]))
-        cv2.rectangle(image, p1, p2, (0, 180, 0), 2)
-        cv2.putText(image, f"GT {row['class_name']}", p1, cv2.FONT_HERSHEY_SIMPLEX, 0.45, (0, 180, 0), 1)
+        draw.rectangle([p1, p2], outline=(0, 180, 0), width=2)
+        draw.text(p1, f"GT {row['class_name']}", fill=(0, 180, 0))
 
     for _, row in pred.iterrows():
         p1 = (int(row["xmin"]), int(row["ymin"]))
         p2 = (int(row["xmax"]), int(row["ymax"]))
         label = f"PR {row['class_name']} {row.get('confidence', 0):.2f}"
-        cv2.rectangle(image, p1, p2, (220, 40, 40), 2)
-        cv2.putText(image, label, (p1[0], max(15, p1[1] - 6)), cv2.FONT_HERSHEY_SIMPLEX, 0.45, (220, 40, 40), 1)
+        draw.rectangle([p1, p2], outline=(220, 40, 40), width=2)
+        draw.text((p1[0], max(0, p1[1] - 14)), label, fill=(220, 40, 40))
     return image
 
 

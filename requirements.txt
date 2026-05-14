@@ -1,13 +1,4 @@
-kaggle
-matplotlib
-opencv-python
 pandas
 pillow
 plotly
-python-dotenv
-pyyaml
-scikit-learn
 streamlit
-torch
-torchvision
-ultralytics

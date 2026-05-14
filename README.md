@@ -41,6 +41,18 @@ Run commands from the `pcb_aoi_project` directory.
 python -m pip install -r requirements.txt
 ```
 
+The root `requirements.txt` is intentionally minimal for Streamlit Cloud deployment. To rerun training or data-preparation scripts locally, install the ML extras as needed:
+
+```bash
+python -m pip install kaggle matplotlib opencv-python-headless python-dotenv pyyaml scikit-learn scipy torch torchvision ultralytics
+```
+
+For Streamlit Cloud, set the app entrypoint to:
+
+```text
+streamlit_app/app.py
+```
+
 Download the data using the token in the parent `.env.txt`:
 
 ```powershell
